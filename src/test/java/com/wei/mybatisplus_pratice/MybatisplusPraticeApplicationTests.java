@@ -24,4 +24,10 @@ private EmployeeService employeeService;
         List<Employee> employeeListList = employeeService.list();
         employeeListList.forEach(System.out::println);
     }
+    @Test
+    public void testGetByOne(){
+        System.out.println("执行getByOne方法");
+        Employee employee = employeeService.getById(5);
+        System.out.println(employee);
+    }
 }
