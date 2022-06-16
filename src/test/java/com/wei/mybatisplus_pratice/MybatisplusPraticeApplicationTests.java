@@ -36,7 +36,7 @@ private EmployeeService employeeService;
     }
     @Test
     public void testInsert(){
-        Employee employee = new Employee(0, "张三", 23, "2558939189@qq.com");
+        Employee employee = new Employee(0, "张三", 23, "2558939189@qq.com",1,null);
         int insert = employeeMapper.insert(employee);
         System.out.println("插入成功？"+(insert==1?"插入成功":"插入失败"));
 
@@ -46,7 +46,7 @@ private EmployeeService employeeService;
         UpdateWrapper<Employee> wrapper = new UpdateWrapper<>();
         wrapper.eq("name","李白");
         String name="杜甫";
-        Employee employee = new Employee(10086, "李骞", 23, "10086@qq.com");
+        Employee employee = new Employee(10086, "李骞", 23, "10086@qq.com",2,null);
         int update = employeeMapper.update(employee,wrapper);
         System.out.println(update);
     }

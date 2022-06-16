@@ -9,4 +9,5 @@ public class Department {
     Integer id;
     String name;
     String address;
+    Integer sn;
 }

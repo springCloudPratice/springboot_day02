@@ -21,9 +21,9 @@ public class DepartmentTest {
     List<Department> departmentList=new ArrayList<>();
     @Test
     public void testInsert(){
-        Department department = new Department(0, "生活部", "1栋30号");
+        Department department = new Department(0, "生活部", "1栋30号",null);
         departmentList.add(department);
-        Department department1 = new Department(0, "生活部", "1栋30号");
+        Department department1 = new Department(0, "生活部", "1栋30号",null);
         departmentList.add(department1);
         departmentService.saveBatch(departmentList);
     }
